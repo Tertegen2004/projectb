@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    text-decoration: none;
+}
+.cont {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+}
+/* Centering the login container */
+.form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 20px;
+}
+.form h2{
+    margin: 10px auto 20px;
+    text-align: center;
+    font-size: 35px;
+}
+/* Input fields styling */
+.input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.input input::placeholder{
+    opacity: 1;
+    transition: .3s;
+}
+.input input:focus::placeholder{
+    opacity: 0;
+}
+.input input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit button styling */
+.btn {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Remember me and forget password styling */
+.remember {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 25px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.remember input {
+    margin-right: 5px;
+}
+
+.remember p {
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.remember p:hover {
+    color: #0056b3;
+}
+
+/* Styling for "Don't Have Account" section */
+.dont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.dont a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dont a:hover {
+    color: #0056b3;
+}
+.accept{
+    margin: 20px 0;
+}
+.accept span,
+.remember span{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+.accept span input{
+    margin-right: 5px;
+}
+
+/* start-manager */
+.cont .container{
+    position: relative;
+    background-color: #fff;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 6px;
+    width: 800px;
+}
+.cont .docpage{
+    position: absolute;
+    top: 40px;
+    right: 180px;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+.cont .docpage a{
+    color: #fff;
+}
+.cont .logout{
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+.cont .logout a{
+    color: #fff;
+}
+.cont .container h3{
+    font-size: 30px;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #ccc;
+}
+.cont .container .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+.container .content .box{
+    background-color: #007bff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+    color: #fff;
+    transition: .3s;
+}
+.container .content .box:hover{
+    cursor: pointer;
+    background-color: #0056b3;
+
+}
+.content .box i{
+    font-size: 50px;
+    margin: 25px 0;
+}
+.content .box p{
+    font-size: 19px;
+}
+/* end-manager */
+
+/* start-doctoracc */
+.doc{
+    position: relative;
+    min-height: 100vh;
+    background-color: #f1f5f9;
+}
+.home{
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #0056b3;
+}
+.home i{
+    color: #fff;
+    font-size: 13px;
+}
+.doc .container{
+    padding: 3% 6%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 30px;
+}
+.doc .container .box{
+    background-color: #fff;
+    border-radius: 6px;
+    text-align: center;
+    padding: 15px;
+}
+.doc .container .contact{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.doc .container .contact i{
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.doc .container .box .txt{
+    text-align: center;
+    margin: 15px 0;
+}
+.box img{
+    width: 110px;
+    border-radius: 50%;
+}
+.doc .container .box .info{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px 0 20px;
+    border-bottom: solid 1px #eee;
+    border-top: solid 1px #eee;
+}
+.doc .container .box .info i{
+    margin-right: 10px;
+}
+.doc .container .box .date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.doc .container .box .date span{
+    font-size: 14px;
+    color: #777;
+}
+.doc .container .box .act a{
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 10px;
+    color: #fff;
+}
+.blue{
+    background-color: #007bff;
+}
+.red{
+    background-color: red;
+}
+.doc .container .new img{
+    margin: 20px 0;
+}
+/* end-doctoracc */
+
+/* start-showmed */
+.cont.wh{
+    background-color: #fff;
+}
+.cont table tr td{
+    padding: 15px;
+    font-weight: 600;
+    font-size: 15px;
+    border-left: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+    border-right: solid 1px #eee;
+}
+.cont table{
+    border: none;
+    border-collapse: collapse;
+    min-width: 1000px;
+}
+.cont .table h2{
+    margin-bottom: 20px;
+}
+.cont table thead td{
+    background-color: #eee;
+    border: 0px;
+    font-size: 17px;
+}
+.cont table tbody tr td img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 2px white;
+}
+.cont table tbody tr td img:not(:first-child){
+    margin-left: -20px;
+}
+.cont table tbody tr span{
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+}
+/* end-showmed */
+
+/* start-search */
+.search{
+    background-color: #fff;
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.search div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.search div input{
+    flex: 1;
+        border: none;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+}
+.search div a{
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 6px
+}
+/* end-search */
